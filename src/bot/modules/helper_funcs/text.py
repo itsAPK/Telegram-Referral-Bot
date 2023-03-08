@@ -1,9 +1,15 @@
 from bot import SUPPORT_CHANNEL
 
+def channel():
+    a = ""
+    for i in SUPPORT_CHANNEL:
+        a+=f"@{i}\n"
+        
+    return a
 
 ERROR=f"""⛔️ <b>You must join our channel</b>
 
-@{SUPPORT_CHANNEL}
+{channel()}
 
 
 ✅ <b>Before starting using the Bot</b>"""

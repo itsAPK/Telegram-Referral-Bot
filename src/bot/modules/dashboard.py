@@ -93,7 +93,7 @@ def bot_stats(update : Update,context : CallbackContext):
 @send_action(ChatAction.TYPING)
 @contest
 def set_wallet(update : Update,context : CallbackContext):
-    context.bot.send_message(update.effective_message.chat_id,"Please send your <b>BSC Wallet</b> address ",reply_markup=cancel_markup())
+    context.bot.send_message(update.effective_message.chat_id,"Please send your <b>Solana Wallet</b> address ",reply_markup=cancel_markup())
     
     return WALLET
 

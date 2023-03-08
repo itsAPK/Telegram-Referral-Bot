@@ -12,22 +12,20 @@ from bot.modules.sql import session,base
 class User(base): 
     __tablename__ = 'users'
     id = Column(Integer, primary_key=True)
-    chat_id=Column(Integer)
-    first_name= Column(String)
-    last_name=Column(String)
+    chat_id=Column(BigInteger)
+    first_name=Column(String,default="")
+    last_name=Column(String,default="")
     username = Column(String)
     score=Column(Integer,default=0)
     refferal=Column(Integer,default=0)
     invalid_ref=Column(Integer,default=0)
-    refferal_id=Column(Integer)
+    refferal_id=Column(BigInteger)
     joined=Column(Date,default=datetime.date.today())
     wallet=Column(String)
     
-    def __init__(self,chat_id,first_name,last_name,username,refferal=0,invalid_ref=0,refferal_id=None,score=0,wallet=None):
+    def __init__(self,chat_id,username,refferal=0,invalid_ref=0,refferal_id=None,score=0,wallet=None):
         self.score=score
         self.chat_id=chat_id
-        self.first_name=first_name
-        self.last_name=last_name
         self.username=username
         self.refferal=refferal
         self.invalid_ref=invalid_ref
@@ -42,17 +40,14 @@ User.__table__.create(checkfirst=True)
 LOCK=threading.RLock()
 
 def add_user(message):
-        
+        print(message.chat)
         user=session.query(User).filter(User.chat_id == message.chat.id).all()
-        first_name = message.chat.first_name
-        last_name = message.chat.last_name
+       
+ 
         username = message.chat.username
         chat_id = message.chat.id
         
-        if first_name == None:
-            first_name = 'None'
-        if last_name == None:
-            last_name = 'None'
+        
         if username == None:
             username = 'None'
         if chat_id == None:
@@ -60,16 +55,15 @@ def add_user(message):
         with LOCK:
             if not len(user):
                 if message.text[7:] == '':
-                    session.add(User(chat_id=chat_id,username=username,first_name=first_name,last_name=last_name))
+                    session.add(User(chat_id=chat_id,username=username))
                     session.commit()
                 else:
-                    session.add(User(chat_id=chat_id,username=username,first_name=first_name,last_name=last_name,refferal_id=message.text[7:]))
+                    session.add(User(chat_id=chat_id,username=username,refferal_id=message.text[7:]))
                     session.commit()
                 LOGGER.info('New User : chat_id {} username {}'.format(chat_id,username))
             if len(user):
                 session.query(User).filter(User.chat_id == message.chat.id).update({ 
-                    User.first_name:first_name,
-                    User.last_name:last_name,
+                 
                     User.username:username ,
                     })
                 session.commit()

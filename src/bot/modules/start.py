@@ -12,20 +12,27 @@ VALIDATE,START_OVER=range(2)
 
 @send_action(ChatAction.TYPING)
 def start(update : Update,context : CallbackContext) :
+    print(update.message.chat)
     context.user_data[START_OVER]=update.message
-    is_in_grp=context.bot.get_chat_member(f"@{SUPPORT_CHANNEL}",update.effective_message.chat_id)
-    if not is_in_grp.status in  ['member','creator','administartor']:
-        context.bot.send_message(update.effective_message.chat_id,ERROR,parse_mode=ParseMode.HTML,reply_markup=join_markup())
-        return VALIDATE
+  
+    for channel in SUPPORT_CHANNEL:
+      
+        is_in_grp=context.bot.get_chat_member(f"@{channel}",update.effective_message.chat_id)
+        if not is_in_grp.status in  ['member','creator','administrator']:
+            context.bot.send_message(update.effective_message.chat_id,ERROR,parse_mode=ParseMode.HTML)
+            return VALIDATE
     valid_user(update,context)
     return -1
 
 
 def validate_user(update : Update,context : CallbackContext):
-    is_in_grp=context.bot.get_chat_member(f"@{SUPPORT_CHANNEL}",update.effective_message.chat_id)
-    if not is_in_grp.status in  ['member','creator','administrator']:
-        context.bot.send_message(update.effective_message.chat_id,ERROR,parse_mode=ParseMode.HTML)
-        return VALIDATE
+    print(update)
+    for channel in SUPPORT_CHANNEL:
+        print(channel)
+        is_in_grp=context.bot.get_chat_member(f"@{channel}",update.effective_message.chat_id)
+        if not is_in_grp.status in  ['member','creator','administrator']:
+            context.bot.send_message(update.effective_message.chat_id,ERROR,parse_mode=ParseMode.HTML)
+            return VALIDATE
     valid_user(update,context)
     return -1
     
