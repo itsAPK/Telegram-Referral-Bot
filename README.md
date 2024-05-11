@@ -41,7 +41,24 @@ Bt allows users to generate referral links, track total referrals, and view a le
 This bot streamlines the referral process on Telegram, making it convenient for users to participate in referral programs and for businesses o leverage word-of-mouth marketing effectively.
 
 # User Dashboard 
+
 - **Dashboard**: User Dashboard Where user can see there primary details like name, refferal link, total invites
 - **Leaderboard** : Can see top referrals of the contest
 - **Shill** : Generates Promotional Template to share
 
+![User Dashboard](https://i.ibb.co/CBRBPgv/IMG-20240512-WA0000.jpg)
+
+## Admin Panel 
+
+- **Broadcast**: To send a message to all users.
+- **Edit Shill Post**: To edit all shill posts.
+- **Add Admin**: To add an admin.
+- **Statistics**: To view bot statistics.
+- **Get User Info**: To retrieve user information.
+- **Export Data**: To export all user data in CSV format.
+- **Reset Contest**: To reset the contest score.
+- **Set Message**: To set the welcome message.
+- **Set Image**: To set the welcome image. (Upload the image using [https://ibb.co](https://ibb.co) and send the link)
+- **Open / Close Contest**: To open and close the contest.
+
+![Admin Dashboard](https://i.ibb.co/1QR380T/IMG-20240512-030717-967.jpg)
