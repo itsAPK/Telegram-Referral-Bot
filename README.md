@@ -1,6 +1,6 @@
 # Python Telegram Referral Bot
 
-Bt allows users to generate referral links, track total referrals, and view a leaderboard of top referrers.
+Bot allows users to generate referral links, track total referrals, and view a leaderboard of top referrers.
 
 ## Installation
 
