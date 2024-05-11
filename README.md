@@ -63,3 +63,14 @@ __use /startadmin command_
 - **Open / Close Contest**: To open and close the contest.
 
 ![Admin Dashboard](https://i.ibb.co/1QR380T/IMG-20240512-030717-967.jpg)
+
+## Credits and Thanks To
+
+- **APScheduler** by [Agenda-Creator](https://github.com/agenda-creator) - APScheduler is a Python library for scheduling tasks.
+- **betterlogging** by [Better-Logger](https://github.com/better-logger) - A lightweight Python logging library.
+- **python-telegram-bot** by [python-telegram-bot Team](https://github.com/python-telegram-bot/python-telegram-bot) - python-telegram-bot is a Python wrapper for the Telegram Bot API.
+- **SQLAlchemy** by [SQLAlchemy Team](https://github.com/sqlalchemy/sqlalchemy) - SQLAlchemy is a SQL toolkit and Object-Relational Mapping (ORM) library for Python.
+
+## Note
+
+The python-telegram-bot library used in this project is version 13.7 is pretty old.
