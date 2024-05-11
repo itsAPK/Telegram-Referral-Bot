@@ -40,7 +40,7 @@ Bt allows users to generate referral links, track total referrals, and view a le
 
 This bot streamlines the referral process on Telegram, making it convenient for users to participate in referral programs and for businesses o leverage word-of-mouth marketing effectively.
 
-# User Dashboard 
+## User Dashboard 
 
 - **Dashboard**: User Dashboard Where user can see there primary details like name, refferal link, total invites
 - **Leaderboard** : Can see top referrals of the contest
@@ -49,7 +49,7 @@ This bot streamlines the referral process on Telegram, making it convenient for 
 ![User Dashboard](https://i.ibb.co/CBRBPgv/IMG-20240512-WA0000.jpg)
 
 ## Admin Panel 
-__use /startadmin command_
+_use /startadmin command_
 
 - **Broadcast**: To send a message to all users.
 - **Edit Shill Post**: To edit all shill posts.
