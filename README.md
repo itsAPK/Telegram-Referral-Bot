@@ -29,3 +29,19 @@ Bt allows users to generate referral links, track total referrals, and view a le
    cd src && python3 -m bot
   ```
    
+## Usage
+
+- **Automated Referral Generation**: Simplifies the process of generating unique referral links for users.
+- **Track Referral Metrics**: Enables users to monitor their total referrals and view their position on the leaderboard effortlessly.
+- **Simplified Sharing**: Provides pre-populated sharing messages, facilitating quick and easy dissemination of referral links.
+- **Promotional Tool**: Offers businesses a promotional avenue to incentivize user referrals, thereby enhancing user acquisition and   engagement.How It WorksThis bot streamlines the referral process on Telegram, making it convenient for users to participate in referral programs and for businesses to leverage word-of-mouth marketing effectively.
+
+## How It Works
+
+This bot streamlines the referral process on Telegram, making it convenient for users to participate in referral programs and for businesses o leverage word-of-mouth marketing effectively.
+
+# User Dashboard 
+- **Dashboard**: User Dashboard Where user can see there primary details like name, refferal link, total invites
+- **Leaderboard** : Can see top referrals of the contest
+- **Shill** : Generates Promotional Template to share
+
