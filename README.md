@@ -49,6 +49,7 @@ This bot streamlines the referral process on Telegram, making it convenient for 
 ![User Dashboard](https://i.ibb.co/CBRBPgv/IMG-20240512-WA0000.jpg)
 
 ## Admin Panel 
+__use /startadmin command_
 
 - **Broadcast**: To send a message to all users.
 - **Edit Shill Post**: To edit all shill posts.
