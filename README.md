@@ -25,7 +25,7 @@ Bt allows users to generate referral links, track total referrals, and view a le
     SUPPORT_CHANNEL='' #Channel where referal users need to join 
    ```
 5. Run the bot
-   ```bash
-   python3 -m bot
-   ```
+  ```bash
+   cd src && python3 -m bot
+  ```
    
