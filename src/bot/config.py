@@ -4,11 +4,11 @@
 
 class Config(object):
     LOGGER = True
-    DATABASE_URI ='postgresql://postgres:24111999@localhost:5432/groupref'
-    LOG_CHANNEL = -1001410504549
-    SUDO_USERS=[431108047,972650691,1773748036,1508254655,1776321910,1669215589,1853258941]
+    DATABASE_URI ='postgresql://postgres:postgres@localhost:5432/db'
+    LOG_CHANNEL =     #Channel Id to get bot error logs
+    SUDO_USERS=[] #User Ids who can access bot admin panel
     BOT_TOKEN='1393190801:AAFSRCGOQAajiyY7SE5kxTDTcaPDecOQAjs'
     WORKERS = 8
-    SUPPORT_CHANNEL='NanoDogecoin'
+    SUPPORT_CHANNEL='' #Channel where referal users need to join 
     
     
