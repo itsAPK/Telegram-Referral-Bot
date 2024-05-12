@@ -6,7 +6,7 @@ Bot allows users to generate referral links, track total referrals, and view a l
 
 1. Clone this repository:
 ```bash
-   git clone https://github.com/your_username/python-telegram-referral-bot.git
+   git clone https://github.com/itsAPK/Telegram-Referral-Bot.git
    ```
 2. Install the required dependencies:
   ```bash
