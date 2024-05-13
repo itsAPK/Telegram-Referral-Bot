@@ -9,5 +9,5 @@ python-telegram-bot==13.7
 pytz==2021.1
 six==1.16.0
 SQLAlchemy==1.4.20
-tornado==6.1
+tornado==6.3.3
 tzlocal==2.1
